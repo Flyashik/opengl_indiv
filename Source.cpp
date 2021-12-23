@@ -329,13 +329,17 @@ int main() {
                 case (sf::Keyboard::A):
                     if (rotate_road[1] >= -0.785398)
                         rotate_road[1] -= 0.05; break;
-                case (sf::Keyboard::I):
-                    light.position[0] += 0.1;  break;
                 case (sf::Keyboard::L):
+                    light.position[0] += 0.1;  break;
+                case (sf::Keyboard::I):
+                    light.position[2] += 0.1;  break;
+                case (sf::Keyboard::U):
                     light.position[1] += 0.1;  break;
-                case (sf::Keyboard::K):
-                    light.position[0] -= 0.1;  break;
                 case (sf::Keyboard::J):
+                    light.position[0] -= 0.1;  break;
+                case (sf::Keyboard::K):
+                    light.position[2] -= 0.1;  break;
+                case (sf::Keyboard::O):
                     light.position[1] -= 0.1;  break;
                 default: break;
                 }
