@@ -341,6 +341,22 @@ int main() {
                     light.position[2] -= 0.1;  break;
                 case (sf::Keyboard::O):
                     light.position[1] -= 0.1;  break;
+                case (sf::Keyboard::Z):
+                    light.ambient[0] = 0.0;  
+                    light.ambient[1] = 0.0;
+                    light.ambient[2] = 0.0;
+                    light.ambient[3] = 0.0;
+                    light.diffuse[3] = 0.0;
+                    light.specular[3] = 0.0;
+                    break;
+                case (sf::Keyboard::X):
+                    light.ambient[0] = 0.2;
+                    light.ambient[1] = 0.2;
+                    light.ambient[2] = 0.2;
+                    light.ambient[3] = 1.0;
+                    light.diffuse[3] = 1.0;
+                    light.specular[3] = 1.0;
+                    break;
                 default: break;
                 }
             }
